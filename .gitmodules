@@ -1,0 +1,3 @@
+[submodule "WeShareUs-back"]
+	path = WeShareUs-back
+	url = https://github.com/jeangho293/WeShareUs-back.git
