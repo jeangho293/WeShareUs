@@ -16,6 +16,7 @@ services:
     ports:
       - "4000:3000"
     environment:
+      - SERVER_PORT=3000
       - MYSQL_HOST=db
       - MYSQL_USERNAME=root
       - MYSQL_PASSWORD=1234
@@ -26,3 +27,15 @@ services:
     restart: always
     volumes:
       - ./WeShareUs-back/src:/WeShareUs-back/src
+  front:
+    build:
+      context: ./WeShareUs-front
+      dockerfile: ../Dockerfile.front
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+      - back
+    restart: always
+    volumes:
+      - ./WeShareUs-front/src:/WeShareUs-front/src
