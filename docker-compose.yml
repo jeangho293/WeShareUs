@@ -39,14 +39,3 @@ services:
     restart: always
     volumes:
       - ./WeShareUs-front/src:/WeShareUs-front/src
-  back-office:
-    build:
-      context: ./WeShareUs-back-office
-      dockerfile: ../Dockerfile.back-office
-    ports:
-      - "7727:3000"
-    depends_on:
-      - db
-      - back
-    volumes:
-      - ./WeShareUs-back-office/src:/WeShareUs-back-office/src
