@@ -4,3 +4,6 @@
 [submodule "WeShareUs-front"]
 	path = WeShareUs-front
 	url = https://github.com/jeangho293/WeShareUs-front.git
+[submodule "WeShareUs-back-office"]
+	path = WeShareUs-back-office
+	url = https://github.com/jeangho293/WeShareUs-back-office.git
