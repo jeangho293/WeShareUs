@@ -6,6 +6,7 @@ services:
     container_name: WeShareUs-mysql
     environment:
       - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_DB=WeShareUs
     ports:
       - "3306:3306"
     restart: always
